@@ -3,8 +3,10 @@
 //
 
 #include<stdio.h>
-#include "reg_sys.h"
 #include "mem_sys.h"
+#include "reg_sys.h"
+
+extern uint8_t mem[MEM_SIZE];
 
 void fill_reg(uint8_t reg, int32_t val) {
     if (reg < 0 || reg >= BASE_REGISTER_COUNT) return;
